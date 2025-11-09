@@ -22,6 +22,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"        # root folder of your HTML
-          output_location: "/"     # no build step
-
+          app_location: "/"        # root folder for your HTML site
+          output_location: "/"     # no build process (index.html at root)
